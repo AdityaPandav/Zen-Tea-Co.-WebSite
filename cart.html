@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Cart | Zen Tea Co.</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Playfair+Display:wght@400;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <div class="container">
+            <nav>
+                <a href="index.html" class="logo">Zen Tea Co.</a>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="menu.html">Shop Teas</a></li>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="cart.html" class="active cart-icon">Cart <span class="cart-count">0</span></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="section-padding" style="background-color: var(--color-bg-alt);">
+        <div class="container text-center">
+            <h1 class="section-title">Your Cart</h1>
+        </div>
+    </section>
+
+    <!-- Cart Content -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="cart-container">
+                <div id="cart-items-container" class="cart-items">
+                    <!-- Cart items injected here -->
+                </div>
+
+                <div class="cart-summary">
+                    <h3>Order Summary</h3>
+                    <div class="summary-row">
+                        <span>Subtotal</span>
+                        <span id="cart-total">$0.00</span>
+                    </div>
+                    <div class="summary-row">
+                        <span>Shipping</span>
+                        <span>Free</span>
+                    </div>
+                    <hr style="margin: 1rem 0; border: 0; border-top: 1px solid #ddd;">
+                    <div class="summary-row total">
+                        <span>Total</span>
+                        <span id="cart-total-final">$0.00</span>
+                        <!-- JS should update this too or just use one total -->
+                    </div>
+                    <button class="btn btn-primary" style="width: 100%; margin-top: 1rem;"
+                        onclick="alert('Thank you for your order! This is a demo.')">Checkout</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="logo" style="color: white;">Zen Tea Co.</div>
+                <div class="footer-links">
+                    <a href="index.html">Home</a>
+                    <a href="menu.html">Shop</a>
+                    <a href="#">Contact</a>
+                </div>
+                <div class="copyright">
+                    &copy; 2024 Zen Tea Co. All rights reserved.
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Small inline script to sync the second total if needed, or just rely on the main script
+        // For simplicity, I'll update the main script to target both if they exist, or just use CSS to layout
+    </script>
+</body>
+
+</html>

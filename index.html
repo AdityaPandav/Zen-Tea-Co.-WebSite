@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zen Tea Co. | Premium Organic Teas</title>
+    <meta name="description" content="Discover the finest selection of organic teas at Zen Tea Co. Handpicked for serenity and taste.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <div class="container">
+            <nav>
+                <a href="index.html" class="logo">Zen Tea Co.</a>
+                <ul class="nav-links">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="menu.html">Shop Teas</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="cart.html" class="cart-icon">Cart <span class="cart-count" id="cart-count">0</span></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content container">
+            <h1>Sip Serenity</h1>
+            <p>Experience the purest flavors of nature with our hand-picked organic teas.</p>
+            <a href="menu.html" class="btn btn-primary">Shop Collection</a>
+        </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section class="section-padding featured-products">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="section-title">Featured Blends</h2>
+                <p style="margin-bottom: 2rem; color: var(--color-text-light);">Curated favorites for your daily ritual.</p>
+            </div>
+            
+            <div class="product-grid" id="featured-products-container">
+                <!-- Products will be injected here by JS -->
+            </div>
+            
+            <div class="text-center" style="margin-top: 3rem;">
+                <a href="menu.html" class="btn btn-outline">View All Teas</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section-padding" id="about">
+        <div class="container text-center">
+            <h2 class="section-title">Our Philosophy</h2>
+            <p style="max-width: 800px; margin: 0 auto; font-size: 1.1rem;">
+                At Zen Tea Co., we believe that tea is more than just a beverage—it's a moment of mindfulness. 
+                We source our leaves directly from sustainable gardens to bring you the freshest, most authentic flavors 
+                while honoring the earth.
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="logo" style="color: white;">Zen Tea Co.</div>
+                <div class="footer-links">
+                    <a href="index.html">Home</a>
+                    <a href="menu.html">Shop</a>
+                    <a href="#">Contact</a>
+                </div>
+                <div class="copyright">
+                    &copy; 2024 Zen Tea Co. All rights reserved.
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
